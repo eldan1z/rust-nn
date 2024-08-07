@@ -1,6 +1,7 @@
 # Neural Network from Scratch in Rust
 
-This project implements a simple neural network from scratch using Rust. It includes forward propagation, activation functions, and backpropagation for training the network.
+This project implements a simple neural network from scratch using Rust. The goal is for the neural network to learn the XOR function, which means the network should output values close to [0.0] or [1.0] depending on the input pairs. After successful training, the network should approximate these results accurately.
+
 
 ## Modules
 
@@ -34,6 +35,7 @@ This project implements a simple neural network from scratch using Rust. It incl
 ### Running the Project
 
 1. Build and run the project using Cargo
+
    ```sh
    cargo run
    ```
@@ -41,8 +43,8 @@ This project implements a simple neural network from scratch using Rust. It incl
 ### Example Output
 
 ```plaintext
-[0.0, 0.0] -> [0.005208839963216559]
-[0.0, 1.0] -> [0.0043766263225649225]
-[1.0, 0.0] -> [0.005091125549000404]
-[1.0, 1.0] -> [0.004266722149043419]
+[0.0, 0.0] -> [0.001]
+[0.0, 1.0] -> [0.999]
+[1.0, 0.0] -> [0.999]
+[1.0, 1.0] -> [0.001]
 ```
